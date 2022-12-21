@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+   
+    <!--css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="wrapper">
+        <img src="time.svg" alt="clock">
+           <h1>00:00:00</h1>
+
+
+ 
+          <!--take input for setting alarm-->
+           <form class="alarm-setting-form">
+
+            <div class="set-alarm-div">
+                <input type="number" name="hour" placeholder="HH" max="23" min="00">
+                <input type="number" name="minute" placeholder="MM" max="59" min="00">
+                <input type="number" name="second" placeholder="SS" max="59" min="00">
+            </div>
+        
+            <div class="btn">
+                <button type="submit" class="set-alarm">Set Alarm</button>
+                <button type="reset" onclick="stopAlarm()" class="stop-alarm">Stop Alarm</button>
+            </div>
+        </form>
+
+        <hr style="margin-top: 18px">
+
+        <h3 style="margin: 18px 0;">Upcoming Alarms</h3>
+
+       
+        <div id="Upcoming-Alarms">
+            <ul id="Upcoming-Alarms-List">
+              <!--list of all the upcoming alarms-->
+            </ul>
+        </div>
+        
+    </section>
+
+ 
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
